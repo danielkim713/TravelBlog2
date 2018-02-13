@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Travel Blog Capstone</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <form action="action_page.php">
-      <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Travel Blog" class="avatar">
-      </div>
-    
+	 <div class="imgcontainer">
+	   <img src="img_avatar2.png" alt="Travel Blog" class="avatar">
+	 </div>
+
+	 <ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#about">About</a></li>
+	  <li><a href="#login">Log in</a></li>
+	  <li><a href="#signup">Sign up</a></li>
+	</ul>
+
+
+    <form action="action_page.php">    
       <div class="container">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
@@ -63,22 +71,21 @@
     </form>
     
     
-    
-    
-    
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <h1>Click the countries you have been to!</h1>
     <div id="chartdiv"></div>
-    <div id="info"><span id="selected">-</span><br>Comments:
+    <div id="info"><span id="selected">-</span>
       <div id="info">
-        <form action="/action_page.php" id="usrform">Username: <input type="text" name="usrname">
-          <input type="submit">
+        <form action="/action_page.php" id="usrform">Username:
         </form>
         <br>
-        <textarea name="comment" form="usrform">
-          Enter text here</textarea>
+        <div class="commentSection">
+        	<textarea name="comment" form="usrform">Enter comments here</textarea>
+        	<button type="submit" class="commententer">Post</button>
+			<br>Comments:
+		</div>
       </div>
     </div>
     
