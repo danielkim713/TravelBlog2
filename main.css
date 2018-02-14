@@ -5,6 +5,13 @@ body {
   font-size: 15px;
 }
 
+.imgcontainer{
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -41,6 +48,258 @@ li a.active {
     background-color: #4CAF50;
 }
 
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+.popupContainer {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  left: 45%;
+  top: 60px;
+  background: #fff;
+}
+
+#modal_trigger {
+  margin: 40px auto;
+  width: 200px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #f4f4f2;
+}
+
+.btn_red {
+  background: #ed6347;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #e4e4e2;
+}
+
+.btn_red:hover {
+  background: #c12b05;
+}
+
+a.btn {
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.btn_red {
+  color: #fff;
+}
+
+.one_half {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.one_half.last {
+  width: 45%;
+  margin-left: 5%;
+}
+/* Popup Styles*/
+
+.popupHeader {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.popupHeader {
+  background: #f4f4f2;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.popupHeader .modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  background: #e4e4e2;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.popupBody {
+  padding: 20px;
+}
+/* Social Login Form */
+
+.social_login {
+}
+
+.social_login .social_box {
+  display: block;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f2;
+  overflow: hidden;
+}
+
+.social_login .icon {
+  display: block;
+  width: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.social_login .fb .icon {
+  background: #3b5998;
+}
+
+.social_login .google .icon {
+  background: #dd4b39;
+}
+
+.social_login .icon_title {
+  display: block;
+  padding: 5px 0;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: #777;
+}
+
+.social_login .social_box:hover {
+  background: #e4e4e2;
+}
+
+.centeredText {
+  text-align: center;
+  margin: 20px 0;
+  clear: both;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.action_btns {
+  clear: both;
+  overflow: hidden;
+}
+
+.action_btns a {
+  display: block;
+}
+/* User Login Form */
+
+.user_login {
+  display: none;
+}
+
+.user_login label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user_login input[type="text"],
+.user_login input[type="email"],
+.user_login input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.user_login input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.user_login input[type="checkbox"] + label {
+  float: left;
+}
+
+.user_login .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.forgot_password {
+  display: block;
+  margin: 20px 0 10px;
+  clear: both;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ed6347;
+}
+/* User Register Form */
+
+.user_register {
+  display: none;
+}
+
+.user_register label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user_register input[type="text"],
+.user_register input[type="email"],
+.user_register input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.user_register input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.user_register input[type="checkbox"] + label {
+  float: left;
+}
+
+.user_register .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+
+
 h1 {
   font-size: 1.5em;
   font-weight: 400;
@@ -60,68 +319,6 @@ h1 {
   margin: 10px auto;
   padding: 5px 8px;
 }
-/*login
-
-form {
-    border: 3px solid #f1f1f1;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-    opacity: 0.8;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
-    display: none;
-}
-
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
 
 textarea {
   width: 100%;
@@ -132,22 +329,7 @@ textarea {
   text-align: center;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}
 
 .signup{
   display: none;
 }
-
-
-
-
-
