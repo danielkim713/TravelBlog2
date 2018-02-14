@@ -40,10 +40,15 @@ var map = AmCharts.makeChart("chartdiv", {
  * Returns array consisting of country ISO2 codes
  */
 function getSelectedCountries() {
-  var selected = [];
+  var selected = "";
+  console.log(map.dataProvider.areas);
   for(var i = 0; i < map.dataProvider.areas.length; i++) {
     if(map.dataProvider.areas[i].showAsSelected)
-      selected.push(map.dataProvider.areas[i].title);
+      selected = map.dataProvider.areas[i].title;
+  }
+  for(var i = 0; i < map.dataProvider.areas.length; i++) {
+    if(map.dataProvider.areas[i].showAsSelected)
+      map.dataProvider.areas[i].showAsSelected = false;
   }
   return selected;
 }

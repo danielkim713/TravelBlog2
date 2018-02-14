@@ -5,11 +5,18 @@ body {
   font-size: 15px;
 }
 
+header, .container{
+  max-width: 1280px;
+  margin: auto;
+}
+
 .imgcontainer{
   text-align: center;
   font-size: 26px;
   margin-bottom: 10px;
   background-color: lightblue;
+  max-width: 1280px;
+  margin: auto;
 }
 
 * {
@@ -155,6 +162,8 @@ a.btn_red {
 
 .popupBody {
   padding: 20px;
+  max-width: 500px;
+  margin: auto; 
 }
 /* Social Login Form */
 
@@ -320,13 +329,18 @@ h1 {
   padding: 5px 8px;
 }
 
+.commentSection{
+  max-width: 500px;
+}
+
 textarea {
-  width: 100%;
+  width: 90%;
+  float: left;
 }
 
 .commententer{
-  width:50%;
-  text-align: center;
+  width: 10%;
+  float: right;
 }
 
 
